@@ -1,0 +1,120 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[dvipsnames]{xcolor}
+
+% Colors
+\definecolor{primary}{RGB}{0, 64, 128}
+
+% Formatting
+\titleformat{\section}{\large\bfseries\color{primary}}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{5pt}
+
+\setlength{\parindent}{0pt}
+
+\newcommand{\workexp}[5]{
+    \textbf{#1} \hfill #2\\
+    \textcolor{primary}{#3} \hfill \textit{#4}\vspace{5pt}
+    \begin{itemize}[leftmargin=*,nosep]
+    #5
+    \end{itemize}
+    \vspace{5pt}
+}
+
+\newcommand{\eduexp}[4]{
+    \textbf{#1} \hfill #2\\
+    \textcolor{primary}{#3} \hfill \textit{#4}\vspace{5pt}
+    \vspace{4pt}
+}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \textbf{Erik Israel González Guerrero}} \\ \vspace{3pt}
+    {\large \textcolor{primary}{\textbf{IIoT \& Manufacturing Platforms Engineer}}} \\ \vspace{4pt}
+    Phone: +52 418 184 10 20 \quad
+    Email: \href{mailto:erikisraelgg@gmail.com}{erikisraelgg@gmail.com} \quad
+    LinkedIn: \href{https://www.linkedin.com/in/erikisraelgg/}{erikisraelgg} \\
+    Querétaro, México \quad Open to relocate
+\end{center}
+
+% ------------------------- Professional Summary -------------------------
+\section*{Professional Summary}
+Manufacturing \& IIoT Software Engineer with a strong background in Engineering and Smart Manufacturing. Experienced in architecting real-time data acquisition pipelines, industrial telemetry streaming, and edge-to-cloud integration for smart factory environments. Skilled in configuring IIoT platforms (SCADA/HMI concepting), implementing data streaming architectures with TCP/UDP sockets, and integrating OT/IT protocols (SPI, I2C, UART, BLE). Proven track record in troubleshooting industrial communication networks, optimizing SQL databases, and supporting Mechatronics and Manufacturing Engineering teams under Agile methodologies.
+
+% ------------------------- Professional Experience -------------------------
+\section*{Professional Experience}
+\workexp{IIoT \& Embedded Software Engineer Jr.}{Jan 2025 - Present}{QSM Semiconductores}{Querétaro, México}{
+    \item Designed and deployed \textbf{real-time data acquisition and telemetry systems} for manufacturing equipment using industrial communication protocols (\textbf{SPI, I2C, UART, BLE, TCP/UDP sockets}).
+    \item Configured and developed custom \textbf{HMI/SCADA visualization dashboards} (TouchGFX, Jetpack Compose, Flutter, windows Form) integrated with SQL databases for operational telemetry and real-time process monitoring.
+    \item Engineered \textbf{Software-in-the-Loop (SIL) hardware simulators} to mock BLE and sensor behaviors, accelerating integration validation and reducing system commissioning time by \textbf{2 months}.
+    \item Performed operational troubleshooting, network protocol validation, and signal integrity testing across embedded controllers (\textbf{STM32, ESP32, Raspberry Pi}) and industrial sensors.
+    \item Developed automated benchmarking frameworks to evaluate inference latency, data throughput, and system stability under high-load simulated manufacturing conditions.
+}
+\vspace{4pt}
+
+\workexp{Field Technician \& Quality Compliance}{Jun 2024 - Sep 2024}{Ingeniería y Síntesis, S.A. de C.V.}{Querétaro, México}{
+    \item Executed calibration, functional validation, and troubleshooting of field instrumentation strictly adhering to the \textbf{NMX-EC-17025-IMNC-2018} quality standard.
+    \item Compiled, verified, and audited \textbf{technical measurement reports} for industrial stationary sources, perimeter noise, and atmospheric emissions compliance.
+}
+\vspace{4pt}
+
+\workexp{Data \& Systems Laboratory Technician}{Jan 2024 - Apr 2024}{Center for Applied Physics and Advanced Technology (CFATA - UNAM)}{Querétaro, México}{
+    \item Developed numerical and statistical models in \textbf{Python and MATLAB} for automated processing and SQL-based historization of material characterization data.
+    \item Simulated and tuned \textbf{RLC signal response circuits} to characterize high-frequency dielectric behavior in sensor technologies.
+}
+\vspace{4pt}
+
+\workexp{Project Lead - Industrial Technology}{Sep 2022 - Dec 2023}{International Entrepreneurship Lab Smart Money (IELSM)}{Querétaro, México}{
+    \item Led cross-functional teams of 5+ engineers in evaluating technical feasibility and ROI for automated manufacturing and hardware startup projects.
+}
+
+% ------------------------- Technical Skills -------------------------
+\section*{Technical Skills}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{IIoT \& Manufacturing Platforms:}\\
+    Ignition (SCADA/HMI Design), Apache Kafka (Data Streaming), Industrial Telemetry, Data Historization, MQTT concepting, SQL Databases, SupaBase, Firebase
+    \item \textbf{Data Analytics, Visualization \& Automation:}\\
+    Power BI, DAX, Google Analytics, Google Apps Script, Data Historization, SQL Databases (Queries \& Modeling), Operational Dashboards.
+    \item \textbf{Protocols, Hardware \& Networks:}\\
+    SPI, I2C, UART, BLE, TCP/IP, UDP Sockets, STM32, ESP32, Raspberry Pi, Industrial Wireless, Linux Systems, Doxygen.
+    \item \textbf{Programming \& Data Tools:}\\
+    Python, C++, C, SQL, Java, Kotlin, PySpark/R, MATLAB, Git, Docker/Edge Containers.
+    \item \textbf{Engineering \& Quality Standards:}\\
+    Functional Testing, Root Cause Troubleshooting, System Validation, Agile/Scrum.
+\end{itemize}
+
+
+% ------------------------- Education -------------------------
+\section*{Education}
+\eduexp{M.S. in Engineering for Smart Manufacturing}{Sep 2024 - Present}{Universidad Tecnológica del Estado de Querétaro (UTEQ)}{Querétaro, México}
+\begin{itemize}[leftmargin=*,nosep]
+    \item \textit{Thesis Focus: Architecting an IIoT \& Smart Manufacturing IAM Ecosystem featuring real-time telemetry governance, edge compute integration, and operational policy enforcement.}
+\end{itemize}
+\vspace{4pt}
+
+\eduexp{B.S. in Nanotechnology Engineering (Mecatronics \& Materials focus)}{Sep 2022 - May 2024}{Universidad Tecnológica del Estado de Querétaro (UTEQ)}{Querétaro, México}
+
+% -------------------------////--- Certification ---////-------------------------
+\section*{Certifications \& Continuing Education}
+
+\eduexp{Diploma in Semiconductors}{May 2023 - Aug 2023}{Tecnológico Nacional de México}{Online}
+
+\eduexp{Diploma in Lithium Value Chain}{May 2023 - Aug 2023}{Tecnológico Nacional de México}{Online}
+
+\eduexp{AI Fundamentals}{Sep 2025 - Dec 2025}{IBM SkillsBuild}{Online}
+
+\eduexp{JavaScript Certificate}{Jan 2024 - Jun 2024}{Oracle Next Education}{Online}
+
+\eduexp{Generative AI Course}{Aug 2024 - Oct 2024}{ONE Chat GPT \& JavaScript}{Online}
+
+% -------------------------////--- Languages ---////-------------------------
+\section*{Languages} 
+Spanish (Native) \hfill | \hfill English (B2 - Intermediate) \hfill| \hfill French (B1 - Intermediate) \hfill | \hfill German (A1 - Basic)
+
+\end{document}

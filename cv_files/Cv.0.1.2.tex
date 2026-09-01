@@ -1,0 +1,128 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[dvipsnames]{xcolor}
+
+% Colors
+\definecolor{primary}{RGB}{0, 64, 128}
+
+% Formatting
+\titleformat{\section}{\large\bfseries\color{primary}}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{5pt}
+
+\setlength{\parindent}{0pt}
+
+\newcommand{\workexp}[5]{
+    \textbf{#1} \hfill #2\\
+    \textcolor{primary}{#3} \hfill \textit{#4}\vspace{5pt}
+    \begin{itemize}[leftmargin=*,nosep]
+    #5
+    \end{itemize}
+    \vspace{5pt}
+}
+
+\newcommand{\eduexp}[4]{
+    \textbf{#1} \hfill #2\\
+    \textcolor{primary}{#3} \hfill \textit{#4}\vspace{5pt}
+    \vspace{4pt}
+}
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge \textbf{Erik Israel González Guerrero}} \\ \vspace{4pt}
+    {\large \textcolor{primary}{\textbf{Android \& Embedded Software Engineer}}} \\ \vspace{6pt}
+    Phone: +52 418 184 10 20 \quad
+    Email: \href{mailto:erikisraelgg@gmail.com}{erikisraelgg@gmail.com} \quad
+    LinkedIn: \href{https://www.linkedin.com/in/erikisraelgg/}{erikisraelgg} \\
+    Querétaro, México \quad Open to relocate
+\end{center}
+
+% -------------------------////--- Summary ---////-------------------------
+\section*{Professional Summary}
+Highly motivated Software Engineer with experience in track record developing tactile HMI applications (Kotlin, Flutter) integrated with wireless technologies (BLE, WiFi Sockets) and microcontrollers. Experienced in designing simulation mocks for hardware-in-the-loop navigation flows, implementing serial and network communication protocols (SPI, I2C, UART, TCP/UDP), and architecting Agentic AI workflows utilizing open-source frameworks to drive smart manufacturing automation under Agile/Scrum methodologies.
+
+% -------------------------////--- Experience ---////-------------------------
+\section*{Professional Experience}
+\workexp{Firmware \& Software Development Engineer Jr.}{Jan 2025 - Present}{QSM Semiconductores}{Querétaro, México}{
+    \item Architected cross-platform touch-screen HMI applications using \textbf{Kotlin (MVI/MVVM), Jetpack Compose, Flutter, and TouchGFX (OOP)}.
+        \item Developed robust \textbf{BLE scanning and telemetry applications} capable of device discovery, service/characteristic extraction, and real-time parameter configuration.
+    \item Engineered high-performance wireless communication systems leveraging \textbf{TCP/UDP WiFi sockets} for real-time, low-latency data streaming and multi-device synchronization.
+    \item Engineered \textbf{BLE sofware-in-the-loop (SIL) simulators (mocking)} to replicate peripheral behavior, decoupling software from hardware availability and accelerating HMI/GUI design cycles by \textbf{2 months (Time-to-Market)}.
+    \item Integrated hardware and software components utilizing \textbf{SPI, I2C, and UART} protocols for sensor telemetry acquisition and precise actuator control.
+    \item Trained and optimized local \textbf{AI models (LLM, STT, TTS, VLM)} leveraging NVIDIA CUDA and Python to enhance system intelligence and local governance edge capabilities.
+    \item Designed \textbf{Agentic AI} micro-agents via \textbf{gentle-ai} frameworks to automate repetitive workflow operations, orchestrating LLMs/SLMs (\textbf{Gemini, Qwen, Copilot}) to generate and iterate complex HMI and user interfaces (UI).
+    \item Built automated benchmarking systems leveraging \textbf{opencode-cli} to evaluate edge model inference times and system UI responsiveness under simulated high-load manufacturing environments.
+    \item Implemented \textbf{Model Context Protocol (MCP)} architectures—integrating context providers like \textbf{Engram, Context7, and Penpot}—to stream real-time environmental data and system states into the agentic AI, ensuring highly contextual and accurate execution.
+        \item \textbf{AI \& Edge Compute Architecture:} Designed and implemented the control logic for an intelligent robotic system integrated into Flutter, leveraging the Cactus framework for on-device execution of multimodal AI pipelines (\textbf{STT, SLM, LLM, TTS, and VLM}) optimized for ARM architecture.
+    \item \textbf{Multimodal Integration \& Computer Vision:} Coordinated real-time video and audio capture using \textbf{OpenCV and YOLO} for vision-language models (VLM), integrating \textbf{ElevenLabs} for speech synthesis (TTS) and natural language processing to enable voice assistant interaction.
+    \item \textbf{Benchmarking \& ARM Optimization:} Developed a benchmarking framework to evaluate performance, inference latency, and memory footprint of multimodal models across mobile ARM processors and SBCs, successfully deploying them on resource-constrained platforms like \textbf{Raspberry Pi 4B and Movile Device}.
+
+
+    
+}
+\vspace{6pt}
+\workexp{Field Technician}{Jun 2024 - Sep 2024}{Ingeniería y Síntesis, S.A. de C.V.}{Querétaro, México}{
+    \item Calibrated and verified laboratory and field equipment strictly under the \textbf{NMX-EC-17025-IMNC-2018} quality standard, ensuring 100\% compliance.
+    \item Prepared, documented, and reviewed \textbf{technical test reports} for stationary sources, \textbf{air quality}, and perimeter noise.
+}
+\vspace{6pt}
+\workexp{Laboratory Technician}{Jan 2024 - Apr 2024}{Center for Applied Physics and Advanced Technology (CFATA - UNAM)}{Querétaro, México}{
+    \item Developed \textbf{mathematical models} using \textbf{Python and MATLAB} to analyze electrical and \textbf{dielectric properties} in advanced materials.
+    \item Simulated and tuned system parameters via \textbf{RLC circuits} to characterize complex dielectric behaviors.
+    \item Analyzed and visualized \textbf{spectroscopic data (FTIR, UV-Vis)} utilizing \textbf{Origin software}.
+}
+\vspace{6pt}
+\workexp{Team Leader / Project Manager}{Sep 2022 - Dec 2023}{International Entrepreneurship Lab Smart Money (IELSM)}{Querétaro, México}{
+    \item Supervised international, multidisciplinary teams of 5+ members and evaluated \textbf{business model feasibility} utilizing the \textbf{Business Model Canvas} framework.
+}
+
+% -------------------------////--- Skills ---////-------------------------
+\section*{Technical Skills}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Architecture, Design \& Methodologies:}\\
+    Clean Architecture, MVI, MVVM, MVC, BLOC Pattern, OOP, HMI Design, Agile, Scrum.
+    \item \textbf{Protocols, Wireless \& OS:}\\ 
+    SPI, I2C, UART, Bluetooth Low Energy (BLE), TCP/UDP Sockets (WiFi), Linux.
+    \item \textbf{Programming Languages:}\\ 
+    Kotlin, C++, C, Python, Java, JavaScript, HTML, CUDA.
+    \item \textbf{Software, Hardware \& Tools:}\\ 
+    Jetpack Compose, STM32, ESP32, Raspberry Pi, Android Studio, CubeIDE, Git, GitHub.
+    \item \textbf{Data Science, Testing \& Modeling:}\\ 
+    Unit Testing, R, MATLAB, COMSOL Multiphysics, Minitab, Origin.
+\end{itemize}
+
+% -------------------------////--- Education ---////-------------------------
+\section*{Education}
+\eduexp{M.S. in Engineering for Smart Manufacturing}{Sep 2024 - Present}{Universidad Tecnológica del Estado de Querétaro (UTEQ)}{Querétaro, México}
+\begin{itemize}[leftmargin=*,nosep]
+    \item \textit{Thesis Project: Architecting a multiplatform Identity and Access Management (IAM) ecosystem integrating Clean Architecture, MVI/BLoC state management, Local AI Governance, and Segregation of Duties (SoD) policies.}
+\end{itemize}
+\vspace{4pt}
+
+\eduexp{B.S. in Nanotechnology Engineering}{Sep 2022 - May 2024}{Universidad Tecnológica del Estado de Querétaro (UTEQ)}{Querétaro, México}
+
+% -------------------------////--- Certification ---////-------------------------
+\section*{Certifications \& Continuing Education}
+
+\eduexp{Diploma in Semiconductors}{May 2023 - Aug 2023}{Tecnológico Nacional de México}{Online}
+
+\eduexp{Diploma in Lithium Value Chain}{May 2023 - Aug 2023}{Tecnológico Nacional de México}{Online}
+
+\eduexp{AI Fundamentals}{Sep 2025 - Dec 2025}{IBM SkillsBuild}{Online}
+
+\eduexp{JavaScript Certificate}{Jan 2024 - Jun 2024}{Oracle Next Education}{Online}
+
+\eduexp{Generative AI Course}{Aug 2024 - Oct 2024}{ONE Chat GPT \& JavaScript}{Online}
+
+% -------------------------////--- Languages ---////-------------------------
+\section*{Languages} 
+Spanish (Native) \hfill | \hfill English (B2 - Intermediate) \hfill| \hfill French (B1 - Intermediate) \hfill | \hfill German (A1 - Basic)
+
+\end{document}
